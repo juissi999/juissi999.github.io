@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import ReactDOM from "react-dom";
 
 const Head = (props) => {
@@ -7,18 +7,43 @@ const Head = (props) => {
   )
 }
 
-const Linkbar = (props) => {
+const Link = ({ind, txt, set}) => {
+  const styleobj = {
+    display:'inline-block',
+    margin:'5px'
+  }
+
+  return (<div style={styleobj}>
+            <a href={'#' + txt} onClick={()=>set(ind)}>{txt}</a>
+          </div>)
+}
+
+const Linkbar = ({set}) => {
   return (<div>
-    {props.linklist.join(' ')}
+    <Link ind={0} txt='me' set={set} />
+    <Link ind={1} txt='my projects' set={set}/>
+    <Link ind={2} txt='my adventures' set={set}/>
     </div>
   )
 }
 
+const Text = (props) => {
+  return (<div>
+    {props.txt}
+  </div>)
+}
+
 const App = () => {
-  const linklist = ['me', 'my projects', 'my adventures']
- //<Head text={'Hello world!'}/>
+
+  const [site, setSite] = useState(0)
+  const txt = ['My name is Jussi.',
+  'This site is made with react.',
+  'I traveled to 3 continents on planet earth.']
+
   return (<>
-    <Linkbar linklist={linklist}/>
+    <Head text='Jussis homepage'/>
+    <Linkbar set={setSite}/>
+    <Text txt={txt[site]}/>
   </>)
 }
 
