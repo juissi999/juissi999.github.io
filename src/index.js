@@ -1,48 +1,17 @@
-import React, {useState} from "react";
-import ReactDOM from "react-dom";
-
-const Head = (props) => {
-  return (
-    <h1>{props.text}</h1>
-  )
-}
-
-const Link = ({ind, txt, set}) => {
-  const styleobj = {
-    display:'inline-block',
-    margin:'5px'
-  }
-
-  return (<div style={styleobj}>
-            <a href={'#' + txt} onClick={()=>set(ind)}>{txt}</a>
-          </div>)
-}
-
-const Linkbar = ({set}) => {
-  return (<div>
-    <Link ind={0} txt='me' set={set} />
-    <Link ind={1} txt='my projects' set={set}/>
-    <Link ind={2} txt='my adventures' set={set}/>
-    </div>
-  )
-}
-
-const Text = (props) => {
-  return (<div>
-    {props.txt}
-  </div>)
-}
+import React, {useState} from "react"
+import ReactDOM from "react-dom"
+import {Link, Linkbar, Head, Text} from './components/site'
 
 const App = () => {
 
   const [site, setSite] = useState(0)
   const txt = ['My name is Jussi.',
-  'This site is made with react.',
+  'This site is made with react. I can\'t do partials well yet so that\'s it.',
   'I traveled to 3 continents on planet earth.']
 
   return (<>
-    <Head text='Jussis homepage'/>
-    <Linkbar set={setSite}/>
+    <Head text={'Jussi\'s homepage'}/>
+    <Linkbar setsite={setSite}/>
     <Text txt={txt[site]}/>
   </>)
 }
