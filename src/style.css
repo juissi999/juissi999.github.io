@@ -1,0 +1,41 @@
+body {
+  background-color: #6ded8a;
+}
+
+p {
+  margin: 5px;
+}
+
+a {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(130, 31, 150);
+}
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color: hotpink;
+}
+
+h1 {
+  color: #3b61e9;
+  margin-left: 5px
+}
+
+.linkbarlink {
+  display: inline-block;
+  margin: 5px 5px 15px;
+}
+
+/*
+old school color-palette:
+#f0f14e #6ded8a #1645f5 #ff5f85 #ed3833 
+greens complementary:
+#ED6DCF
+*/
