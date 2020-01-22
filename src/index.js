@@ -5,7 +5,7 @@ import Me from './components/me'
 import Main from './components/main'
 import Projects from './components/projects'
 import  "./style.css"
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import {HashRouter as Router, Switch, Route} from 'react-router-dom'
 
 const App = () => {
 
