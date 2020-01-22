@@ -9,6 +9,7 @@ p {
 a {
   font-size: 18px;
   text-decoration: none;
+  margin: 5px;
 }
 
 a:visited {
@@ -28,9 +29,21 @@ h1 {
   margin-left: 5px
 }
 
+.block_element {
+  display: inline-block;
+}
+
+.topimage{
+  height: 40px;
+}
+
 .linkbarlink {
   display: inline-block;
-  margin: 5px 5px 15px;
+  margin: 5px 5px 25px;
+}
+
+.linkbar {
+  margin: 5px 5px 25px 0px;
 }
 
 /*

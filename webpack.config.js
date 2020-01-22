@@ -1,6 +1,9 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
+  devServer: {
+    historyApiFallback: true
+ },
   module: {
     rules: [
       {
@@ -14,6 +17,11 @@ module.exports = {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        use: ['file-loader', {
+          loader: 'image-webpack-loader'}]
+      }
     ]
   },
   output: {

@@ -1,19 +1,27 @@
 import React, {useState} from "react"
 import ReactDOM from "react-dom"
-import {Linkbar, Head, Text, Content} from './components/site'
-import css from "./style.css"
+import {Linkbar, Head} from './components/elements'
+import Me from './components/me'
+import Main from './components/main'
+import Projects from './components/projects'
+import  "./style.css"
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 const App = () => {
 
   const [site, setSite] = useState(0)
   
-  //console.log(window.location.hash)
-
-  return (<>
-    <Head text={'Jussi\'s homepage'}/>
-    <Linkbar setsite={setSite}/>
-    <Content site={site}/>
-  </>)
+  return (
+    <Router>
+      <Head text={'Jussi\'s homepage'}/>
+      <Linkbar setsite={setSite}/>
+      <Switch>
+        <Route path='/me' component={Me}/>
+        <Route path='/projects' component={Projects}/>
+        <Route path='/' component={Main}/>
+      </Switch>
+    </Router>
+  )
 }
 
 ReactDOM.render(<App />, document.querySelector("#root"))
