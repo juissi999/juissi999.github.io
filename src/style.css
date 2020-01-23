@@ -52,3 +52,10 @@ old school color-palette:
 greens complementary:
 #ED6DCF
 */
+
+/* less wide screen, not let images be too wide */
+@media (max-width:500px) {
+  img {
+      max-width:100%;
+  }
+}
