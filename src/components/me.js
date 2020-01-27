@@ -19,13 +19,13 @@ const Me = () => {
     <br/>
     <br/>
     <Img src={meme} class={'block_element'}/>
-    <Text txt={'I like memes too. Sometimes communicating with me is mostly memes.'}/>
+    <Text txt={'I like memes too. Sometimes communicating with me is basically memes.'}/>
     <br/>
     <Img src={ramen} class={'block_element'}/>
     <Text txt={'Ramen is like the bestest food eva. U should try it.'}/>
     <br/>
     <Img src={rt} class={'block_element'}/>
-    <Text txt={'Travelling is gut. Very gut.'}/>
+    <Text txt={'Travelling is fun. Road tripping very fun.'}/>
     </>
   )
 }
