@@ -11,9 +11,8 @@ const App = () => {
 
   const [site, setSite] = useState(0)
   
-  return (
+  return (<>
     <Router>
-      <Head text={'Jussi\'s homepage'}/>
       <Linkbar setsite={setSite}/>
       <Switch>
         <Route path='/me' component={Me}/>
@@ -21,6 +20,7 @@ const App = () => {
         <Route path='/' component={Main}/>
       </Switch>
     </Router>
+    </>
   )
 }
 
