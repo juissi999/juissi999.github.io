@@ -12,6 +12,8 @@ const Me = () => {
 
   return (<>
     <Head text={'Me'}/>
+    <Text txt={'A few things about me.'}/>
+    <br/>
     <Img src={smallme} class={'block_element'}/>
     <Text txt={'My name is Jussi. I\'m a 34-yo MsC from Finland.'}/>
     <br/>
