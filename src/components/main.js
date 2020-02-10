@@ -5,10 +5,8 @@ const Main = () => {
 
   return (<>
     <Head text={'Jussi\'s homepage'}/>
-    <br/>
     Welcome to my site.
     Click a link on the top right corner to proceed.
-    <br/>
     </>
   )
 }

@@ -34,18 +34,22 @@ h1 {
   margin-left: 5px
 }
 
-.block_element {
-  display: inline-block;
+li {
+  line-height:25px;
 }
 
-.topimage{
-  height: 40px;
+.block_element {
+  display: inline-block;
 }
 
 .linkbar {
   width: 97vw;
   text-align: right;
   margin: 15px 5px 25px 0px;
+}
+
+.topimage{
+  height: 40px;
 }
 
 /*
