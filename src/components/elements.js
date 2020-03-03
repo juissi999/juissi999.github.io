@@ -17,9 +17,7 @@ const Linkbar = () => {
   const linklist = ['main', 'me', 'projects']
 
   const links = () => linklist.map((cval, i) => {
-
       return(<Link key={i} to={cval}>{cval}</Link>)
-      //return(<Link1 key={i} to={'#' + cval} txt={cval}/>)
     }
   )
 
@@ -29,9 +27,9 @@ const Linkbar = () => {
   )
 }
 
-// const Link1 = ({to, txt}) => {
-//   return (<a href={to} className={'linkbarlink'} >{txt}</a>)
-// }
+const Hyperlink = ({to, txt}) => {
+  return (<a href={to}>{txt}</a>)
+}
 
 const Text = (props) => {
   return (<p>
@@ -41,12 +39,16 @@ const Text = (props) => {
 
 const Ulist = ({elements}) => {
 
+  const listelement = (e) => e.map((el, i) =>{
+    return el
+  })
+
   const maplist = () => elements.map((el,i) => {
-    return (<li key={i}>{el}</li>)
+    return (<li key={i}>{listelement(el)}</li>)
   })
 
   return (<ul>{maplist()}</ul>)
 }
 
 
-export {Link, Head, Linkbar, Text, Ulist, Img}
+export {Link, Hyperlink, Head, Linkbar, Text, Ulist, Img}

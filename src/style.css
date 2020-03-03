@@ -7,23 +7,23 @@ p {
   margin: 5px;
 }
 
-a {
+.linkbar a {
   font-size: 18px;
   text-decoration: none;
   padding: 5px 8px 5px 8px;
   color: black;
 }
 
-a:visited {
+.linkbar a:visited {
   color: black;
 }
 
-a:hover {
+.linkbar a:hover {
   color: black;
   background-color: rgb(130, 31, 150);
 }
 
-a:active {
+.linkbar a:active {
   color: black;
   /*color: rgb(130, 31, 150);*/
 }
