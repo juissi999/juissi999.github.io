@@ -10,7 +10,8 @@ const Projects = () => {
   ['Signal processing involving e.g. FFT, wavelet, filtering and image-processing'],
   ['Published scientific articles'],
   ['I\'ve created websites on JS, Node.js, D3 and this site with React.js'],
-  ['A bit of game development (e.g. ', <Hyperlink txt={'Story of Integra'} to={'https://rpgmaker.net/games/4499/'} />, ')'], 
+  ['A bit of game development (e.g. ', <Hyperlink txt={'Story of Integra'} to={'https://rpgmaker.net/games/4499/'} />,
+   ', ', <Hyperlink txt={'The Godslayer'} to={'https://rpgmaker.net/games/5291/'} />, ')'], 
   ['Many smaller projects such as community web-sites, LAN-networks, etc.']]
 
   return (<>
