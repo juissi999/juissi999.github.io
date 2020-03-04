@@ -1,6 +1,20 @@
 import React from 'react'
 import {Text, Hyperlink, Ulist, Img, Head} from './elements'
 
+import eegtool from './img/eegtool_small.png'
+import integra from './img/integra.jpg'
+
+const project_desc = [{name:'EEGtool', img:eegtool, desc:'An EEG-signal analysis tool with GUI on Matlab'},
+                      {name:'Story of Integra (+ sequel)', img:integra, desc:'A full-scale JRPG project, programming on Ruby'}]
+
+const Project = ({name, img, desc}) => {
+  return (<div class="project">
+    <h3>{name}</h3>
+    <Img src={img} class={'block_element'}/>
+    <Text txt={desc} />
+  </div>)
+}
+
 const Projects = () => {
 
   const elementlist = [['I\'ve worked more than 5 years on a international psychology research group'],
@@ -14,10 +28,15 @@ const Projects = () => {
    ', ', <Hyperlink txt={'The Godslayer'} to={'https://rpgmaker.net/games/5291/'} />, ')'], 
   ['Many smaller projects such as community web-sites, LAN-networks, etc.']]
 
+  const mapprojects = () => project_desc.map((el,i) => {
+    return (<Project name={el.name} img={el.img} desc={el.desc}/>)
+  })
+
   return (<>
   <Head text={'Projects'}/>
-    <Text txt={'Here are some of the projects I\'ve been involved to in the last years:'}/>
-    <Ulist elements={elementlist}/>
+    <Text txt={'Some examples of the projects I\'ve been involved to in the last years:'}/>
+    <br/>
+    {mapprojects()}
     </>
   )
 }
