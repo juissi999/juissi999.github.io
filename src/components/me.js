@@ -1,33 +1,26 @@
 import React from 'react'
 
-import tamagotchi from './img/tamagotchi.gif'
-import ramen from './img/ramen.gif'
 import smallme from './img/smallme.png'
-import meme from './img/meme.JPG'
-import rt from './img/rt.gif'
 import {Text, Ulist, Img, Head} from './elements'
 
 
 const Me = () => {
+
+  const elementlist = [['Scripting'], ['UI design and programming'], ['Mathematics'], ['IoT and signal processing'], ['Fullstack web-development'], ['Game development']]
 
   return (<>
     <Head text={'Me'}/>
     <Text txt={'A few things about me.'}/>
     <br/>
     <Img src={smallme} class={'block_element'}/>
-    <Text txt={'My name is Jussi. I\'m a 34-yo MsC from Finland.'}/>
+    <Text txt={'My name is Jussi. I\'m a 34-yo MsC from Finland. ' }/>
+    <Text txt={'I\'ve done projects in fields of:' }/>
+    <Ulist elements={elementlist}/>
+    <Text txt={'I have experience in programming e.g. with Python, Matlab, JavaScript, HTML/CSS, Ruby, C and C++.' }/>
+    <Text txt={'Check out some of my projects on the projects page or in my github.'}/>
     <br/>
-    <Img src={tamagotchi} class={'block_element'}/>
-    <Text txt={'I was always into tech somehow'}/>
-    <br/>
-    <Img src={meme} class={'block_element'}/>
-    <Text txt={'I like internet culture and memes.'}/>
-    <br/>
-    <Img src={ramen} class={'block_element'}/>
-    <Text txt={'Ramen is like my favourite food, try it!'}/>
-    <br/>
-    <Img src={rt} class={'block_element'}/>
-    <Text txt={'Road-trips are my favourite means of travel!'}/>
+    <Text txt={'I am looking for a programming or other engineering job in Finland.'}/>
+    <Text txt={'You can contact me through my github page!'}/>
     </>
   )
 }
