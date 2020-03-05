@@ -24,7 +24,8 @@ const project_desc = [{name:'EEGtool', img:eegtool,
                       ]
 
 const Project = ({name, img, desc}) => {
-  return (<div class="project">
+  
+  return (<div class='project'>
     <h3>{name}</h3>
     <Img src={img} class={'block_element'}/>
     <p><Txtcombined txtlist={desc} /></p>
@@ -33,15 +34,23 @@ const Project = ({name, img, desc}) => {
 
 const Projects = () => {
 
+  setTimeout(()=>{
+    const projects = document.getElementsByClassName('project')
+    for(let i = 0; i < projects.length; i++) {
+      projects[i].classList.add('visible')
+      projects[i].setAttribute('style', 'transition-delay:' + (i*0.2).toString() + 's')
+    }
+  }, 100)
+
   const mapprojects = () => project_desc.map((el,i) => {
     return (<Project name={el.name} img={el.img} desc={el.desc}/>)
   })
 
   return (<>
-  <Head text={'Projects'}/>
-    <Text txt={'Some examples of the projects I\'ve been involved to in the last years:'}/>
-    <br/>
-    {mapprojects()}
+      <Head text={'Projects'}/>
+      <Text txt={'Some examples of the projects I\'ve been involved to in the last years:'}/>
+      <br/>
+      {mapprojects()}
     </>
   )
 }

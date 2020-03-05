@@ -10,6 +10,7 @@ const Me = () => {
 
   return (<>
     <Head text={'Me'}/>
+    <div class='site_data'>
     <Text txt={'A few things about me.'}/>
     <br/>
     <Img src={smallme} class={'block_element'}/>
@@ -21,6 +22,7 @@ const Me = () => {
     <br/>
     <Text txt={'I am looking for a programming or other engineering job in Finland.'}/>
     <Text txt={'You can contact me through my github page!'}/>
+    </div>
     </>
   )
 }
