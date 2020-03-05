@@ -37,22 +37,22 @@ const Text = (props) => {
   </p>)
 }
 
-const Txtcombined = ({list}) => {
-  const listelement = (e) => e.map((el, i) =>{
+const Txtcombined = ({txtlist}) => {
+  const catlist = (e) => e.map((el, i) =>{
     return el
   })
 
-  return (<>{listelement(list)}</>)
+  return (<>{catlist(txtlist)}</>)
 }
 
 const Ulist = ({elements}) => {
 
   const maplist = () => elements.map((el,i) => {
-    return (<li key={i}><Txtcombined list={el}/></li>)
+    return (<li key={i}><Txtcombined txtlist={el}/></li>)
   })
 
   return (<ul>{maplist()}</ul>)
 }
 
 
-export {Link, Hyperlink, Head, Linkbar, Text, Ulist, Img}
+export {Link, Hyperlink, Head, Linkbar, Text, Txtcombined, Ulist, Img}

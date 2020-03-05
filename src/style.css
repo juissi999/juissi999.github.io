@@ -7,27 +7,6 @@ p {
   margin: 5px;
 }
 
-.linkbar a {
-  font-size: 18px;
-  text-decoration: none;
-  padding: 5px 8px 5px 8px;
-  color: black;
-}
-
-.linkbar a:visited {
-  color: black;
-}
-
-.linkbar a:hover {
-  color: white;
-  background-color: rgb(130, 31, 150);
-}
-
-.linkbar a:active {
-  color: black;
-  /*color: rgb(130, 31, 150);*/
-}
-
 h1 {
   color:rgb(130, 31, 150);
   /*color: #3b61e9;*/
@@ -52,6 +31,27 @@ li {
   width: 96vw;
   text-align: right;
   margin: 15px 5px 25px 0px;
+}
+
+.linkbar a {
+  font-size: 18px;
+  text-decoration: none;
+  padding: 5px 8px 5px 8px;
+  color: black;
+}
+
+.linkbar a:visited {
+  color: black;
+}
+
+.linkbar a:hover {
+  color: white;
+  background-color: rgb(130, 31, 150);
+}
+
+.linkbar a:active {
+  color: black;
+  /*color: rgb(130, 31, 150);*/
 }
 
 .topimage {
