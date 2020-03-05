@@ -58,6 +58,11 @@ li {
   height: 40px;
 }
 
+.projects_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .project {
   background-color: rgba(130, 31, 150, 0.144);
   display: inline-block;

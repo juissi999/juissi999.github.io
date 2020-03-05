@@ -50,7 +50,9 @@ const Projects = () => {
       <Head text={'Projects'}/>
       <Text txt={'Some examples of the projects I\'ve been involved to in the last years:'}/>
       <br/>
-      {mapprojects()}
+      <div className='projects_container'>
+        {mapprojects()}
+      </div>
     </>
   )
 }
