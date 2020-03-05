@@ -1,10 +1,10 @@
-import React, {useState} from "react"
-import ReactDOM from "react-dom"
-import {Linkbar, Head} from './components/elements'
+import React, {useState} from 'react'
+import ReactDOM from 'react-dom'
+import {Linkbar, Site} from './components/elements'
 import Me from './components/me'
 import Main from './components/main'
 import Projects from './components/projects'
-import  "./style.css"
+import  './style.css'
 import {HashRouter as Router, Switch, Route} from 'react-router-dom'
 
 const App = () => {
@@ -15,9 +15,15 @@ const App = () => {
     <Router>
       <Linkbar setsite={setSite}/>
       <Switch>
-        <Route path='/me' component={Me}/>
-        <Route path='/projects' component={Projects}/>
-        <Route path='/' component={Main}/>
+        <Route path='/me'>
+          <Site Content={Me}/>
+        </Route>
+        <Route path='/projects' >
+          <Site Content={Projects}/>
+        </Route>
+        <Route path='/'>
+          <Site Content={Main}/>
+        </Route>
       </Switch>
     </Router>
     </>

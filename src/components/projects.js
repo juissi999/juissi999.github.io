@@ -25,9 +25,9 @@ const project_desc = [{name:'EEGtool', img:eegtool,
 
 const Project = ({name, img, desc}) => {
   
-  return (<div class='project'>
+  return (<div className='project'>
     <h3>{name}</h3>
-    <Img src={img} class={'block_element'}/>
+    <Img src={img} className={'block_element'}/>
     <p><Txtcombined txtlist={desc} /></p>
   </div>)
 }
@@ -43,7 +43,7 @@ const Projects = () => {
   }, 100)
 
   const mapprojects = () => project_desc.map((el,i) => {
-    return (<Project name={el.name} img={el.img} desc={el.desc}/>)
+    return (<Project key={i} name={el.name} img={el.img} desc={el.desc}/>)
   })
 
   return (<>

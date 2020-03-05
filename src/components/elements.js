@@ -54,14 +54,14 @@ const Ulist = ({elements}) => {
   return (<ul>{maplist()}</ul>)
 }
 
-const Site = ({site_header, site_el}) => {
+const Site = ({Content}) => {
   // not_in_use, for future refactoring to have extra div for site
+
   return (<>
-    <Head text={site_header}/>
-    <div class='site_data'>
-      {site_el}
+    <div className='site_data'>
+      <Content />
     </div>
   </>)
 }
 
-export {Link, Hyperlink, Head, Linkbar, Text, Txtcombined, Ulist, Img}
+export {Link, Site, Hyperlink, Head, Linkbar, Text, Txtcombined, Ulist, Img}
