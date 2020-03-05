@@ -63,6 +63,7 @@ li {
   display: inline-block;
   margin: 5px;
   padding: 5px 10px 5px 10px;
+  width: 510px;
 }
 
 /*
@@ -73,9 +74,13 @@ greens complementary:
 */
 
 /* less wide screen, not let images be too wide */
-@media (max-width:500px) {
+@media (max-width:600px) {
   img {
       max-width:100%;
+  }
+
+  .project {
+    width:unset;
   }
 
   .linkbar {
