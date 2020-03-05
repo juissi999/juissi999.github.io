@@ -39,7 +39,8 @@ const Text = (props) => {
 
 const Txtcombined = ({txtlist}) => {
   const catlist = (e) => e.map((el, i) =>{
-    return el
+    // TODO: see if better solution comes than using span
+    return (<span key={i}>{el}</span>)
   })
 
   return (<>{catlist(txtlist)}</>)
