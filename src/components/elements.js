@@ -39,8 +39,8 @@ const Text = (props) => {
 
 const Txtcombined = ({txtlist}) => {
   const catlist = (e) => e.map((el, i) =>{
-    // TODO: see if better solution comes than using span
-    return (<span key={i}>{el}</span>)
+    // span-> React.Fragment to remove unnecessary DOM-elements
+    return (<React.Fragment key={i}>{el}</React.Fragment>)
   })
 
   return (<>{catlist(txtlist)}</>)
