@@ -46,10 +46,14 @@ const Txtcombined = ({txtlist}) => {
   return (<>{catlist(txtlist)}</>)
 }
 
+const Li = ({txtlist}) => {
+  return (<li><Txtcombined txtlist={txtlist}/></li>)
+}
+
 const Ulist = ({elements}) => {
 
   const maplist = () => elements.map((el,i) => {
-    return (<li key={i}><Txtcombined txtlist={el}/></li>)
+    return (<Li key={i} txtlist={el}/>)
   })
 
   return (<ul>{maplist()}</ul>)

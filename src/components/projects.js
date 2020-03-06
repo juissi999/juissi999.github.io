@@ -1,6 +1,6 @@
 import React from 'react'
-import {Text, Txtcombined, Hyperlink, Ulist, Img, Head} from './elements'
 
+import {Text, Txtcombined, Hyperlink, Img, Head} from './elements'
 import eegtool from './img/eegtool_small.png'
 import integra from './img/integra.jpg'
 import sensibus from './img/sensibus.png'
