@@ -1,10 +1,10 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-const Head = (props) => {
+const Head = ({children}) => {
   return (
     <h1>
-    {props.text}
+    {children}
     </h1>
   )
 }
@@ -22,19 +22,19 @@ const Linkbar = () => {
   )
 
   return (<div className='linkbar'>
-    {links()}
-    </div>
+            {links()}
+          </div>
   )
 }
 
-const Hyperlink = ({to, txt}) => {
-  return (<a href={to}>{txt}</a>)
+const Hyperlink = ({to, children}) => {
+  return (<a href={to}>{children}</a>)
 }
 
-const Text = (props) => {
+const Text = ({children}) => {
   return (<p>
-    {props.txt}
-  </p>)
+            {children}
+          </p>)
 }
 
 const Txtcombined = ({txtlist}) => {
@@ -62,11 +62,9 @@ const Ulist = ({elements}) => {
 const Site = ({Content}) => {
   // not_in_use, for future refactoring to have extra div for site
 
-  return (<>
-    <div className='site_data'>
-      <Content />
-    </div>
-  </>)
+  return (<div className='site_data'>
+            <Content />
+          </div>)
 }
 
-export {Link, Site, Hyperlink, Head, Linkbar, Text, Txtcombined, Ulist, Img}
+export {Site, Hyperlink, Head, Linkbar, Text, Txtcombined, Ulist, Img}
