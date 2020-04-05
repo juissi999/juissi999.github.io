@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 
 const Head = ({children}) => {
   return (
@@ -11,20 +10,6 @@ const Head = ({children}) => {
 
 const Img = (props) => {
   return (<img src={props.src} className={props.class}/>)
-}
-
-const Linkbar = () => {
-  const linklist = ['main', 'me', 'projects']
-
-  const links = () => linklist.map((cval, i) => {
-      return(<Link key={i} to={cval}>{cval}</Link>)
-    }
-  )
-
-  return (<div className='linkbar'>
-            {links()}
-          </div>
-  )
 }
 
 const Hyperlink = ({to, children}) => {
@@ -67,4 +52,4 @@ const Site = ({Content}) => {
           </div>)
 }
 
-export {Site, Hyperlink, Head, Linkbar, Text, Txtcombined, Ulist, Img}
+export {Site, Hyperlink, Head, Text, Txtcombined, Ulist, Img}

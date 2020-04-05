@@ -1,5 +1,6 @@
 import React from 'react'
-import {Linkbar, Site} from './elements'
+import {Site} from './elements'
+import Linkbar from './Sites/Linkbar'
 import Me from './Sites/Me'
 import Main from './Sites/Main'
 import Projects from './Sites/Projects'
