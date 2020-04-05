@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-import {Head} from './elements'
+import {Head} from '../elements'
 
 const Main = () => {
 

@@ -1,13 +1,13 @@
 import React from 'react'
 
-import {Text, Txtcombined, Hyperlink, Img, Head} from './elements'
-import eegtool from '../img/eegtool_small.png'
-import integra from '../img/integra.jpg'
-import sensibus from '../img/sensibus.png'
-import gym_session from '../img/gym_session.png'
-import homepage from '../img/homepage.png'
-import currency from '../img/currency.png'
-import gazeanalysislib from '../img/gazeanalysislib.png'
+import {Text, Txtcombined, Hyperlink, Img, Head} from '../elements'
+import eegtool from '../../img/eegtool_small.png'
+import integra from '../../img/integra.jpg'
+import sensibus from '../../img/sensibus.png'
+import gym_session from '../../img/gym_session.png'
+import homepage from '../../img/homepage.png'
+import currency from '../../img/currency.png'
+import gazeanalysislib from '../../img/gazeanalysislib.png'
 
 const project_desc = [{name:'EEGtool', img:eegtool, 
                        desc:['An EEG-signal analysis tool with GUI on Matlab ',

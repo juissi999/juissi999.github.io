@@ -1,7 +1,7 @@
 import React from 'react'
 
-import smallme from '../img/smallme.png'
-import {Text, Txtcombined, Hyperlink, Ulist, Img, Head} from './elements'
+import smallme from '../../img/smallme.png'
+import {Text, Txtcombined, Hyperlink, Ulist, Img, Head} from '../elements'
 
 
 const Me = () => {

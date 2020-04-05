@@ -1,8 +1,8 @@
 import React from 'react'
 import {Linkbar, Site} from './elements'
-import Me from './Me'
-import Main from './Main'
-import Projects from './Projects'
+import Me from './Sites/Me'
+import Main from './Sites/Main'
+import Projects from './Sites/Projects'
 import {HashRouter, Switch, Route} from 'react-router-dom'
 
 const App = () => {
