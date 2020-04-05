@@ -57,7 +57,7 @@ const Projects = () => {
 
   return (<>
       <Head>Projects</Head>
-      <Text>Some examples of the projects I\'ve been involved to in the last years:</Text>
+      <Text>Below you'll find some projects I've been involved into.</Text>
       <br/>
       <div className='projects_container'>
         {mapprojects()}
