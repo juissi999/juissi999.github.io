@@ -123,6 +123,10 @@ p {
   .storyRow {
     margin:0;
   }
+
+  .storyBlock{
+    text-align: center;
+  }
 }
 
 @media (max-width:600px) { 
@@ -143,6 +147,7 @@ p {
   }
 
   .storyBlock {
+    min-width: 200px;
     height:200px;
   }
 
