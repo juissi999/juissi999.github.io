@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {Text, Txtcombined, Hyperlink, Img, Head} from '../elements'
+import { Txtcombined, Hyperlink, Img } from '../elements'
 import eegtool from '../../img/eegtool_small.png'
 import integra from '../../img/integra.jpg'
 import sensibus from '../../img/sensibus.png'
@@ -56,8 +56,8 @@ const Projects = () => {
   })
 
   return (<>
-      <Head>Projects</Head>
-      <Text>Below you'll find some projects I've been involved into.</Text>
+      <h1>Projects</h1>
+      <p>Below you'll find some projects I've been involved into.</p>
       <br/>
       <div className='projects_container'>
         {mapprojects()}

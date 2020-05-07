@@ -12,11 +12,11 @@ const Img = (props) => {
   return (<img src={props.src} className={props.class}/>)
 }
 
-const Hyperlink = ({to, children}) => {
+const Hyperlink = ({ to, children }) => {
   return (<a href={to}>{children}</a>)
 }
 
-const Text = ({children}) => {
+const Text = ({ children }) => {
   return (<p>
             {children}
           </p>)

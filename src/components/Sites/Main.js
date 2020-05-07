@@ -1,12 +1,10 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-import {Head} from '../elements'
-
 const Main = () => {
 
   return (<>
-    <Head>Jussi's homepage</Head>
+    <h1>Jussi's homepage</h1>
     Welcome to my site.
     Click a link on the top right corner to proceed.
     <br/>
