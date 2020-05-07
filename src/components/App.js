@@ -19,19 +19,19 @@ const App = () => {
         <Row>
           <Col>
             <Linkbar/>
+            <Switch>
+              <Route path='/me'>
+                <Site Content={Me}/>
+              </Route>
+              <Route path='/projects' >
+                <Site Content={Projects}/>
+              </Route>
+              <Route path='/'>
+                <Site Content={Main}/>
+              </Route>
+            </Switch>
           </Col>
         </Row>
-      <Switch>
-        <Route path='/me'>
-          <Site Content={Me}/>
-        </Route>
-        <Route path='/projects' >
-          <Site Content={Projects}/>
-        </Route>
-        <Route path='/'>
-          <Site Content={Main}/>
-        </Route>
-      </Switch>
       </Container>
     </HashRouter>
   )

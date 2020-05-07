@@ -1,13 +1,5 @@
 import React from 'react'
 
-const Head = ({children}) => {
-  return (
-    <h1>
-    {children}
-    </h1>
-  )
-}
-
 const Img = (props) => {
   return (<img src={props.src} className={props.class}/>)
 }
@@ -44,7 +36,7 @@ const Ulist = ({elements}) => {
   return (<ul>{maplist()}</ul>)
 }
 
-const Site = ({Content}) => {
+const Site = ({ Content }) => {
   // not_in_use, for future refactoring to have extra div for site
 
   return (<div className='site_data'>
@@ -52,4 +44,4 @@ const Site = ({Content}) => {
           </div>)
 }
 
-export {Site, Hyperlink, Head, Text, Txtcombined, Ulist, Img}
+export {Site, Hyperlink, Text, Txtcombined, Ulist, Img}
