@@ -1,8 +1,7 @@
 import React from 'react'
 
 import smallme from '../../img/smallme.png'
-import { Txtcombined, Hyperlink, Ulist, Img } from '../elements'
-
+import { Txtcombined, Hyperlink, Ulist } from '../elements'
 
 const Me = () => {
 
@@ -12,7 +11,7 @@ const Me = () => {
     <h1>Me</h1>
     <p>A few things about me.</p>
     <br />
-    <Img src={smallme} class={'block_element'}/>
+    <img src={smallme} className='img-fluid'/>
     <p>My name is Jussi. I'm a 34-yo MsC from Finland.</p>
     <p>I've done projects in fields of:</p>
     <Ulist elements={elementlist}/>

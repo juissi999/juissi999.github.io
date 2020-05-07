@@ -1,9 +1,5 @@
 import React from 'react'
 
-const Img = (props) => {
-  return (<img src={props.src} className={props.class}/>)
-}
-
 const Hyperlink = ({ to, children }) => {
   return (<a href={to}>{children}</a>)
 }
@@ -44,4 +40,4 @@ const Site = ({ Content }) => {
           </div>)
 }
 
-export {Site, Hyperlink, Text, Txtcombined, Ulist, Img}
+export {Site, Hyperlink, Text, Txtcombined, Ulist}
