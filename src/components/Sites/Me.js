@@ -10,8 +10,9 @@ const Me = () => {
   return (<>
     <h1>Me</h1>
     <p>A few things about me.</p>
-    <br />
     <img src={smallme} className='img-fluid'/>
+    <br />
+    <br />
     <p>My name is Jussi. I'm a 34-yo MsC from Finland.</p>
     <p>I've done projects in fields of:</p>
     <Ulist elements={elementlist}/>
