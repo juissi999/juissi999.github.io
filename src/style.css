@@ -5,36 +5,12 @@ body {
   font-weight: 300;
 }
 
-li {
-  line-height:25px;
-}
-
-
 .bg_blue {
   background-color: #191c3c;
 }
 
 .bg_violet {
   background-color: rgba(49, 28, 135, 0.25);
-}
-
-.projects_container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.project {
-  background-color: rgba(49, 28, 135, 0.25); /*0.344 0.144*/
-  display: inline-block;
-  margin: 5px;
-  padding: 5px 10px 5px 10px;
-  width: 510px;
-  opacity:0;
-  transition: opacity 1s;
-}
-
-.project.visible {
-  opacity:1;
 }
 
 .story {

@@ -10,6 +10,8 @@ import currency from '../../img/currency.png'
 import gazeanalysislib from '../../img/gazeanalysislib.png'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
+import Row from 'react-bootstrap/Row'
+import Container from 'react-bootstrap/Container'
 
 const project_desc = [
   {name: 'EEGtool',
@@ -56,7 +58,7 @@ const project_desc = [
 const Project = ({name, img, desc, url}) => {
   
   return (
-    <Card bg='dark' style={{ width: '22rem' }} className='mb-3 mr-2 ml-2'>
+    <Card bg='dark' style={{ width: '20rem' }} className='mb-3 mr-2 ml-2'>
       <Card.Img variant='top' src={img} />
       <Card.Body className='bg_violet'>
         <Card.Title>{name}</Card.Title>
@@ -79,16 +81,20 @@ const Projects = () => {
   }, 100)
 
   const mapprojects = () => project_desc.map((el, i) => {
-    return (<Project key={i} name={el.name} img={el.img} desc={el.desc} url={el.link}/>)
+    return (
+        <Project key={i} name={el.name} img={el.img} desc={el.desc} url={el.link}/>
+    )
   })
 
   return (<>
       <h1>Projects</h1>
       <p>Below you'll find some projects I've been involved into.</p>
       <br/>
-      <div className='projects_container'>
-        {mapprojects()}
-      </div>
+      <Container>
+        <Row>
+          {mapprojects()}
+        </Row>
+      </Container>
     </>
   )
 }
