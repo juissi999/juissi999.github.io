@@ -1,6 +1,6 @@
 body {
   background-color: #191c3c;
-  color:#fff;
+  color: #fff;
   font-size: 1.125rem;
   font-weight: 300;
 }
@@ -15,27 +15,27 @@ body {
 
 .story {
   align-items: center;
-  width:70%;
-  margin-left: auto ;
-  margin-right: auto ;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .storyRow {
-  display:flex;
-  justify-content:space-evenly;
+  display: flex;
+  justify-content: space-evenly;
   flex: 40% 0;
-  margin:100px 0 100px 0;
+  margin: 100px 0 100px 0;
 }
 
 .storyBlock {
   height: 400px;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 10px 0 10px ;
+  margin: 0 10px 0 10px;
 }
 
 .storyBlock img {
   height: 100%;
-  width:auto;
+  width: auto;
 }

@@ -1,10 +1,8 @@
 import React from 'react'
 import StoryBlock from './Block'
 
-const StoryRow = ({children}) => {
-
+const StoryRow = ({ children }) => {
   const mapRow = () => {
-
     let renderList = []
     // check if children is an array or just a single element
     // if it's not an array, make it one
@@ -16,14 +14,12 @@ const StoryRow = ({children}) => {
       renderList = [children.slice(0)]
     }
 
-    return renderList.map((c, i)=> {
-      return (<StoryBlock key={i}>{c}</StoryBlock>)
+    return renderList.map((c, i) => {
+      return <StoryBlock key={i}>{c}</StoryBlock>
     })
   }
 
-  return (<div className='storyRow'>
-          {mapRow()}
-          </div>)
+  return <div className="storyRow">{mapRow()}</div>
 }
 
 export default StoryRow
