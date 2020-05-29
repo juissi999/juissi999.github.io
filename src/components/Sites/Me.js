@@ -17,7 +17,7 @@ const Me = () => {
     <>
       <h1>Me</h1>
       <p>A few things about me.</p>
-      <img src={smallme} className="img-fluid" />
+      <img src={smallme} className='img-fluid' />
       <br />
       <br />
       <p>My name is Jussi. I'm a 34-yo MsC from Finland.</p>
@@ -36,19 +36,11 @@ const Me = () => {
           ]}
         />
       </p>
-      <br />
-      <p>
-        I'm currently learning modern fullstack techniques such as React and
-        Node.js. I'm looking for a programming job in Finland, preferably as an
-        Entry-level Fullstack Developer.
-      </p>
-      <br />
       <p>
         My philosophy in building web services is that services should be
         simple, pleasant to use and easy to develop, maintain and deploy.
       </p>
-      <br />
-      <p>Contact me through my github page!</p>
+      <p>You can contact me through my github page!</p>
       <br />
     </>
   )
