@@ -1,15 +1,7 @@
 import React from 'react'
 
-const Hyperlink = ({ to, children }) => {
-  return <a href={to}>{children}</a>
-}
-
-const Text = ({ children }) => {
-  return <p>{children}</p>
-}
-
 const Txtcombined = ({ txtlist }) => {
-  const catlist = (e) =>
+  const catlist = e =>
     e.map((el, i) => {
       // span-> React.Fragment to remove unnecessary DOM-elements
       return <React.Fragment key={i}>{el}</React.Fragment>
@@ -39,10 +31,10 @@ const Site = ({ Content }) => {
   // not_in_use, for future refactoring to have extra div for site
 
   return (
-    <div className="site_data">
+    <div className='site_data'>
       <Content />
     </div>
   )
 }
 
-export { Site, Hyperlink, Text, Txtcombined, Ulist }
+export { Site, Txtcombined, Ulist }

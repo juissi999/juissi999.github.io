@@ -23,17 +23,6 @@ const Project = ({ name, img, desc, url }) => {
 }
 
 const Projects = () => {
-  // setTimeout(() => {
-  //   const projects = document.getElementsByClassName('project')
-  //   for (let i = 0; i < projects.length; i++) {
-  //     projects[i].classList.add('visible')
-  //     projects[i].setAttribute(
-  //       'style',
-  //       'transition-delay:' + (i * 0.2).toString() + 's'
-  //     )
-  //   }
-  // }, 100)
-
   const mapprojects = () =>
     project_desc.map((el, i) => {
       return (

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import smallme from '../../img/smallme.png'
-import { Txtcombined, Hyperlink, Ulist } from '../elements'
+import { Ulist } from '../elements'
 
 const Me = () => {
   const elementlist = [
@@ -28,13 +28,8 @@ const Me = () => {
         HTML/CSS, Ruby, C and C++.
       </p>
       <p>
-        <Txtcombined
-          txtlist={[
-            'Check out some of my projects on the projects page or my ',
-            <Hyperlink to={'https://github.com/juissi999/'}>github</Hyperlink>,
-            '.'
-          ]}
-        />
+        Check out some of my projects on the projects page or my{' '}
+        <a href={'https://github.com/juissi999/'}>github</a>.
       </p>
       <p>
         My philosophy in building web services is that services should be
