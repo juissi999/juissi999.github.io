@@ -9,7 +9,6 @@ import * as data from '../../projects.json'
 const project_desc = data.projects
 
 const Project = ({ name, img, desc, url }) => {
-  console.log(resolve1('./' + img))
   return (
     <Card bg='dark' style={{ width: '20rem' }} className='mb-3 mr-2 ml-2'>
       <Card.Img variant='top' src={resolve1('./' + img).default} />
