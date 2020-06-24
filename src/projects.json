@@ -52,7 +52,7 @@
       "name": "ECGtool",
       "img": "ecgtool.jpeg",
       "desc": "ECG signal analysis tool with easy UI and features such as peak detection using algorithms or hand picking, windowed HR calculation and RSA calculation.",
-      "link": "https://github.com/juissi999/currency_traffic"
+      "link": "https://github.com/infant-cognition-tampere/ecgtool"
     }
   ]
 }
