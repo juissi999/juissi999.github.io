@@ -59,6 +59,12 @@
       "img": "pimage.JPG",
       "desc": "A tool for mapping images to packetsize-port space such as network operations center monitoring screen. Sends packets to create an image.",
       "link": "https://github.com/juissi999/pimage"
+    },
+    {
+      "name": "ldrop",
+      "img": "ldrop.jpeg",
+      "desc": "Sensor-controller library and API with support for multiple simultaneous recorders and actuators designed to work in a psychology study with Python and Linux.",
+      "link": "https://github.com/infant-cognition-tampere/ldrop"
     }
   ]
 }
