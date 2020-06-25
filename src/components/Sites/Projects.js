@@ -10,7 +10,11 @@ const project_desc = data.projects
 const Project = ({ name, img, desc, url }) => {
   return (
     <Card bg='dark' className='mb-3'>
-      <Card.Img variant='top' src={resolve1('./' + img).default} />
+      {typeof img !== 'undefined' ? (
+        <Card.Img variant='top' src={resolve1('./' + img).default} />
+      ) : (
+        ''
+      )}
       <Card.Body className='bg_violet'>
         <Card.Title>{name}</Card.Title>
         <Card.Text>{desc}</Card.Text>
