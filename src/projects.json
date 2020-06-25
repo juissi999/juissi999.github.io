@@ -63,8 +63,13 @@
     {
       "name": "ldrop",
       "img": "ldrop.jpeg",
-      "desc": "Sensor-controller library and API with support for multiple simultaneous recorders and actuators designed to work in a psychology study with Python and Linux.",
+      "desc": "Sensor-controller library and API with support for multiple simultaneous recorders and actuators designed to work in a human based study with Python.",
       "link": "https://github.com/infant-cognition-tampere/ldrop"
+    },
+    {
+      "name": "drop",
+      "desc": "Data Recording Open-source Platform. A python pyGTK GUI for controlling e.g. psychology experiments and collecting IoT data. Provides a limited scripting language for creating and distributing common experiments.",
+      "link": "https://github.com/infant-cognition-tampere/drop"
     }
   ]
 }
