@@ -53,6 +53,12 @@
       "img": "ecgtool.jpeg",
       "desc": "ECG signal analysis tool with easy UI and features such as peak detection using algorithms or hand picking, windowed HR calculation and RSA calculation.",
       "link": "https://github.com/infant-cognition-tampere/ecgtool"
+    },
+    {
+      "name": "pimage",
+      "img": "pimage.JPG",
+      "desc": "A tool for mapping images to packetsize-port space such as network operations center monitoring screen. Sends packets to create an image.",
+      "link": "https://github.com/juissi999/pimage"
     }
   ]
 }
