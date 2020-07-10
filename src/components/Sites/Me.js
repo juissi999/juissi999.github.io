@@ -4,9 +4,11 @@ import { Ulist } from '../elements'
 
 const Me = () => {
   const elementlist = [
+    ['Mathematics'],
+    ['Raw problem-solve engineering'],
+    ['Scientific research'],
     ['Scripting'],
     ['UI design and programming'],
-    ['Mathematics'],
     ['IoT and signal processing'],
     ['Fullstack web-development'],
     ['Game development']
