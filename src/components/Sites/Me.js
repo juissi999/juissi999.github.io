@@ -1,5 +1,4 @@
 import React from 'react'
-
 import smallme from '../../img/smallme.png'
 import { Ulist } from '../elements'
 
