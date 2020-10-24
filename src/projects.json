@@ -73,11 +73,13 @@
     },
     {
       "name": "badger",
+      "img": "badger.png",
       "desc": "An app to collect ticks from events. Works e.g. in a situation where you need to count visitors on entrance of a restaurant. Remembers ticks on local storage and displays a sum chart of tick times.",
       "link": "https://github.com/juissi999/badger"
     },
     {
       "name": "routines",
+      "img": "routines.png",
       "desc": "A PWA-first app to remember important things and routines such as a doorcode or your most favourite dishes. Includes customizable themes, works offline and installs to phone home-screen if wanted.",
       "link": "https://github.com/juissi999/routines"
     }
