@@ -4,39 +4,60 @@ import { Ulist } from '../elements'
 
 const Me = () => {
   const elementlist = [
+    ['Fullstack web-development'],
+    ['IoT and signal processing'],
     ['Mathematics'],
     ['Raw problem-solve engineering'],
     ['Scientific research'],
     ['Scripting'],
     ['UI design and programming'],
-    ['IoT and signal processing'],
-    ['Fullstack web-development'],
     ['Game development']
+  ]
+
+  const technologies = [
+    ['JavaScript (ES5, ES6)'],
+    ['TypeScript'],
+    ['Vue'],
+    ['React.js'],
+    ['PWA'],
+    ['SQL'],
+    ['MongoDB'],
+    ['Azure'],
+    ['HTML/CSS/SCSS'],
+    ['Python'],
+    ['Matlab'],
+    ['Ruby'],
+    ['C'],
+    ['C++']
   ]
 
   return (
     <>
       <h1>Me</h1>
       <p>A few things about me.</p>
-      <img src={smallme} className='img-fluid' />
-      <br />
-      <br />
-      <p>My name is Jussi. I'm a 34-yo MsC from Finland.</p>
+      <img src={smallme} className="img-fluid" />
+
+      <p className="mt-5">
+        My name is Jussi. I'm a 36-yo MsC from Finland. I finished my
+        engineering studies at 2014 on Tampere University of Technology. I
+        started programming already in elementary school over 20 years ago. I'm
+        specialized in web software engineering with a twist of networking and
+        information security knowledge. Besides that I have good skills in
+        electronics and sensor technology and deep mathematical understanding. I
+        can design and implement a full flow of data from a sensor to a cloud
+        storage and visualize it over internet to a mobile device. On my
+        freetime I like sports, sauna and big brother tv-show.
+      </p>
       <p>I've done projects in fields of:</p>
       <Ulist elements={elementlist} />
-      <p>
-        I have experience in programming e.g. with Python, Matlab, JavaScript,
-        HTML/CSS, Ruby, C and C++.
-      </p>
+      <p>Experience with technologies such as</p>
+      <Ulist elements={technologies} />
       <p>
         Check out some of my projects on the projects page or my{' '}
         <a href={'https://github.com/juissi999/'}>github</a>.
       </p>
-      <p>
-        My philosophy in building web services is that services should be
-        simple, pleasant to use and easy to develop, maintain and deploy.
-      </p>
-      <p>You can contact me through my github page!</p>
+
+      <p>You can contact me through my github page or my instagram!</p>
       <br />
     </>
   )
