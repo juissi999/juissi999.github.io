@@ -9,7 +9,7 @@ const Main = () => {
       <p className="my-5">
         <i>
           "Web services should be simple, pleasant to use and easy to develop,
-          maintain and deploy.""
+          maintain and deploy."
         </i>
       </p>
 

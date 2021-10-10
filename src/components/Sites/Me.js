@@ -1,5 +1,5 @@
 import React from 'react'
-import smallme from '../../img/smallme.png'
+import mypic from '../../img/me.JPG'
 import { Ulist } from '../UI/elements'
 
 const Me = () => {
@@ -20,17 +20,18 @@ const Me = () => {
     ['Vue'],
     ['React.js'],
     ['PWA'],
+    ['REST'],
     ['SQL'],
-    ['Vuepress'],
     ['MongoDB'],
+    ['Jamstacks, e.g. Vuepress'],
     ['Azure'],
     ['Azure pipelines'],
     ['HTML/CSS/SCSS'],
     ['Python'],
     ['Matlab'],
     ['Ruby'],
-    ['C'],
-    ['C++'],
+    ['C/C++'],
+    ['TCP/IP'],
     ['Linux, Windows, Mac']
   ]
 
@@ -38,7 +39,7 @@ const Me = () => {
     <>
       <h1>Me</h1>
       <p>A few things about me.</p>
-      <img src={smallme} className="img-fluid" />
+      <img src={mypic} className="img-fluid" />
 
       <p className="mt-5">
         My name is Jussi. I'm a 36-yo MsC from Finland. I finished my
