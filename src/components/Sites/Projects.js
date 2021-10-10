@@ -19,15 +19,7 @@ const Projects = () => {
 
     // create array of Project elements and return it to DOM
     return projectsShuffled.map((el, i) => {
-      return (
-        <Project
-          key={i}
-          name={el.name}
-          img={el.img}
-          desc={el.desc}
-          url={el.link}
-        />
-      )
+      return <Project key={i} projectObj={el} />
     })
   }
 

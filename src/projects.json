@@ -100,7 +100,8 @@
       "name": "routines",
       "img": "routines.png",
       "desc": "A PWA-first app to remember important things and routines such as a doorcode or your most favourite dishes. Includes customizable themes, works offline and installs to phone home-screen if wanted.",
-      "link": "https://github.com/juissi999/routines"
+      "link": "https://github.com/juissi999/routines",
+      "category": "hobby"
     },
     {
       "name": "StatBun",
