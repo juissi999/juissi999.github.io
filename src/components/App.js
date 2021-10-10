@@ -1,5 +1,5 @@
 import React from 'react'
-import { Site } from './elements'
+import { Site } from './UI/elements'
 import Linkbar from './Sites/Linkbar'
 import Me from './Sites/Me'
 import Main from './Sites/Main'

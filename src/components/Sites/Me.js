@@ -1,6 +1,6 @@
 import React from 'react'
 import smallme from '../../img/smallme.png'
-import { Ulist } from '../elements'
+import { Ulist } from '../UI/elements'
 
 const Me = () => {
   const elementlist = [
