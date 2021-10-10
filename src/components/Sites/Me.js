@@ -21,14 +21,16 @@ const Me = () => {
     ['React.js'],
     ['PWA'],
     ['SQL'],
-    ['MongoDB'],
+    ['Vuepress']['MongoDB'],
     ['Azure'],
+    ['Azure pipelines'],
     ['HTML/CSS/SCSS'],
     ['Python'],
     ['Matlab'],
     ['Ruby'],
     ['C'],
-    ['C++']
+    ['C++'],
+    ['Linux, Windows, Mac']
   ]
 
   return (
@@ -45,8 +47,9 @@ const Me = () => {
         information security knowledge. Besides that I have good skills in
         electronics and sensor technology and deep mathematical understanding. I
         can design and implement a full flow of data from a sensor to a cloud
-        storage and visualize it over internet to a mobile device. On my
-        freetime I like sports, sauna and big brother tv-show.
+        storage and visualize it over internet to a mobile device. I have been
+        part of a team using agile methodologies and value teamwork and devops.
+        On my freetime I like sports, sauna, cooking and big brother tv-show.
       </p>
       <p>I've done projects in fields of:</p>
       <Ulist elements={elementlist} />
