@@ -1,5 +1,5 @@
 import React from 'react'
-import mypic from '../../img/me.JPG'
+import mypic from '../../img/me.jpeg'
 import { Ulist } from '../UI/elements'
 
 const Me = () => {
@@ -39,7 +39,7 @@ const Me = () => {
     <>
       <h1>Me</h1>
       <p>A few things about me.</p>
-      <img src={mypic} className="img-fluid" />
+      <img src={mypic} className="myphoto img-fluid" />
 
       <p className="mt-5">
         My name is Jussi. I'm a 36-yo MsC from Finland. I finished my

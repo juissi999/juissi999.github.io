@@ -21,6 +21,10 @@ a:hover {
   background-color: rgba(49, 28, 135, 0.25);
 }
 
+.myphoto {
+  width: 250px;
+}
+
 .category-text {
   color: #A1A1DA;
   font-size: 20px;
