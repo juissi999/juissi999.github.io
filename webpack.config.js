@@ -26,7 +26,7 @@ module.exports = {
     ]
   },
   output: {
-    path: __dirname
+    path: __dirname + '/docs'
   },
   plugins: [
     new HtmlWebPackPlugin({
