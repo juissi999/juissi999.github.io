@@ -4,7 +4,7 @@
       "img": "eegtool_small.png",
       "desc": "An EEG-signal analysis tool with GUI on Matlab. Features such as eeglab integration, video-EEG synchronization, intuitive UI, scripting support.",
       "link": "https://github.com/infant-cognition-tampere/eegtool",
-      "category": "work"
+      "category": "professional"
     },
     {
       "name": "meerkat",
@@ -18,7 +18,7 @@
       "img": "gazeanalysislib.png",
       "desc": "A Matlab library and script that automates many gaze analyses to be performed on computer instead of human based video analysis. source: Widely applicable MATLAB routines for automated analysis of saccadic reaction times (Leppänen et al)",
       "link": "https://github.com/infant-cognition-tampere/gazeanalysislib",
-      "category": "work"
+      "category": "professional"
     },
     {
       "name": "Story of Integra (+ sequel)",
@@ -87,7 +87,7 @@
       "name": "drop",
       "desc": "Data Recording Open-source Platform. A python pyGTK GUI for controlling e.g. psychology experiments and collecting IoT data. Provides a limited scripting language for creating and distributing common experiments.",
       "link": "https://github.com/infant-cognition-tampere/drop",
-      "category": "work"
+      "category": "professional"
     },
     {
       "name": "badger",
@@ -108,14 +108,21 @@
       "img": "statbun.png",
       "desc": "A new large-scale innovative BI app. Part of the original development team. Main responsibilities include Frontend, cloud infrastructure and general functional design.",
       "link": "https://statbun.com",
-      "category": "work"
+      "category": "professional"
     },
     {
       "name": "StatBun coming soon site",
       "img": "statbun_coming_soon.png",
       "desc": "Create initial revisions of StatBun's 'coming soon' product site. Create a JAMstack-based visually pleasing site for future customers.",
       "link": "https://statbun.com",
-      "category": "work"
+      "category": "professional"
+    },
+    {
+      "name": "JSONviz",
+      "img": "jsonviz.png",
+      "desc": "A graphical visualizer for complex JSON-files structure. Lightweight no-overhead solution that simplifies the development and understanding of complex JSON-structures. And it's easy to use.",
+      "link": "https://github.com/juissi999/jsonviz",
+      "category": "professional"
     }
   ]
 }
