@@ -14,27 +14,6 @@ const Me = () => {
     ['Game development']
   ]
 
-  const technologies = [
-    ['JavaScript (ES5, ES6)'],
-    ['TypeScript'],
-    ['Vue'],
-    ['React.js'],
-    ['PWA'],
-    ['REST'],
-    ['SQL'],
-    ['MongoDB'],
-    ['Jamstacks, e.g. Vuepress'],
-    ['Azure'],
-    ['Azure pipelines'],
-    ['HTML/CSS/SCSS'],
-    ['Python'],
-    ['Matlab'],
-    ['Ruby'],
-    ['C/C++'],
-    ['TCP/IP'],
-    ['Linux, Windows, Mac']
-  ]
-
   return (
     <>
       <h1>Me</h1>
@@ -51,18 +30,15 @@ const Me = () => {
         can design and implement a full flow of data from a sensor to a cloud
         storage and visualize it over internet to a mobile device. I have been
         part of a team using agile methodologies and value teamwork and devops.
-        On my freetime I like sports, sauna, cooking and big brother tv-show.
+        On my freetime I like sauna and swimming.
       </p>
       <p>I've done projects in fields of:</p>
       <Ulist elements={elementlist} />
-      <p>Experience with technologies such as</p>
-      <Ulist elements={technologies} />
       <p>
         Check out some of my projects on the projects page or my{' '}
-        <a href={'https://github.com/juissi999/'}>github</a>.
+        <a href={'https://github.com/juissi999/'}>github</a>. You can contact me
+        through my github page or via instagram.
       </p>
-
-      <p>You can contact me through my github page or my instagram!</p>
       <br />
     </>
   )
