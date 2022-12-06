@@ -37,7 +37,7 @@ const Me = () => {
       <p>
         Check out some of my projects on the projects page or my{' '}
         <a href={'https://github.com/juissi999/'}>github</a>. You can contact me
-        through my github page or via instagram.
+        via github or instagram.
       </p>
       <br />
     </>
